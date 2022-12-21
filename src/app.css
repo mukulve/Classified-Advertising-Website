@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.theme {
+  --primary-color: #ffffff;
+  --secondary-color: #f0f2f5;
+  --tertiary-color: #ff690f;
+  --color: black;
+}
+
+main {
+  background-color: var(--secondary-color);
+  min-height: calc(100vh - 165px);
+  padding: 0.5rem 6rem;
+}
+
+body {
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+svg {
+  height: 1rem;
+}
+
+button,
+input {
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+header,
+nav,
+footer {
+  padding: 0rem 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  header,
+  nav,
+  footer {
+    padding: 0rem 3rem;
+  }
+
+  main {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header,
+  nav,
+  footer {
+    padding: 0rem 1.5rem;
+  }
+
+  main {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header,
+  nav,
+  footer {
+    padding: 0rem 0.5rem;
+  }
+
+  main {
+    padding: 0.5rem 0.5rem;
+    min-height: calc(100vh - 165px - 65px);
+  }
+}
